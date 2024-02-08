@@ -4,290 +4,427 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Primer Layout (RelativeLayout) -->
-    <RelativeLayout
+    <!-- First Layout (Linearlayout) -->
+    <LinearLayout
         android:id="@+id/superior"
-        android:layout_width="match_parent"
-        android:layout_marginTop="5dpdp"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/instagram"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:textSize="20dp"
-            android:text="Instagram" />
-
-
-
-        <ImageButton
-            android:id="@+id/imageButton28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="220dp"
-            android:src="@android:drawable/btn_star" />
-
-        <ImageButton
-            android:id="@+id/imageButton28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="280dp"
-            android:src="@android:drawable/btn_star" />
-
-        <ImageButton
-            android:id="@+id/imageButton28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="340dp"
-            android:src="@android:drawable/btn_star" />
-
-    </RelativeLayout>
-
-    <!-- Segundo Layout (LinearLayout) -->
-    <RelativeLayout
-        android:id="@+id/historias"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/superior"
-        android:layout_marginTop="10dp"
         android:orientation="horizontal">
 
 
-        <ImageButton
-            android:id="@+id/historia1"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_marginLeft="15"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginLeft="10dp"
-            android:src="@android:drawable/btn_star" />
-        <TextView
-            android:id="@+id/mystory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="17dp"
-            android:layout_below="@id/historia1"
-
-            android:textSize="10dp"
-            android:text="My Story" />
+            android:layout_weight="5"
+            android:src="@drawable/instagramm"
+            android:scaleType="fitStart"/>
 
         <ImageButton
-            android:id="@+id/historia2"
-            android:layout_width="wrap_content"
+            android:id="@+id/post"
+            android:layout_marginTop="5"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
             android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
-
-        <TextView
-            android:id="@+id/story1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="90dp"
-            android:layout_below="@id/historia1"
-            android:textSize="10dp"
-            android:text="candid" />
-        <ImageButton
-            android:id="@+id/historia3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="160dp"
-            android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
-        <TextView
-            android:id="@+id/story2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="170dp"
-            android:layout_below="@id/historia1"
-            android:textSize="10dp"
-            android:text="Sprinkles_" />
+            android:background="@color/white"
+            android:src="@drawable/publicar" />
 
         <ImageButton
-            android:id="@+id/historia4"
-            android:layout_width="wrap_content"
+            android:id="@+id/like"
+            android:layout_marginTop="5"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="240dp"
             android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
-
-        <TextView
-            android:id="@+id/story2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="240dp"
-            android:layout_below="@id/historia1"
-            android:textSize="10dp"
-            android:text="super_santi" />
+            android:background="@color/white"
+            android:src="@drawable/likes" />
 
         <ImageButton
-            android:id="@+id/historia5"
-            android:layout_width="wrap_content"
+            android:id="@+id/message"
+            android:layout_marginTop="5"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="320dp"
             android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
+            android:background="@color/white"
+            android:src="@drawable/messenger" />
+    </LinearLayout>
 
-        <TextView
-            android:id="@+id/story2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="335dp"
-            android:layout_below="@id/historia1"
-            android:textSize="10dp"
-            android:text="jade" />
-    </RelativeLayout>
+    <!-- Second Layout (Linearlayout) -->
+  <LinearLayout
+      android:id="@+id/historias"
+      android:layout_below="@id/superior"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center_vertical">
 
-    <!-- Tercer Layout (RelativeLayout) -->
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center_horizontal">
+
+          <ImageView
+              android:id="@+id/pictureStory1"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/story1"/>
+
+          <TextView
+              android:id="@+id/nameStory1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="My story"
+              android:textSize="12sp"
+              android:textColor="@android:color/black" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center_horizontal">
+
+          <ImageView
+              android:id="@+id/pictureStory2"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/story2"/>
+
+          <TextView
+              android:id="@+id/nameStory2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="ashleystt"
+              android:textSize="12sp"
+              android:textColor="@android:color/black" />
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center_horizontal">
+
+          <ImageView
+              android:id="@+id/pictureStory3"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/story3"/>
+
+          <TextView
+              android:id="@+id/nameStory3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="viciocapital"
+              android:textSize="12sp"
+              android:textColor="@android:color/black" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center_horizontal">
+
+          <ImageView
+              android:id="@+id/pictureStory4"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/story4"/>
+
+          <TextView
+              android:id="@+id/nameStory4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="gabrielagil"
+              android:textSize="12sp"
+              android:textColor="@android:color/black" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:gravity="center_horizontal">
+
+          <ImageView
+              android:id="@+id/pictureStory5"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/story5"/>
+
+          <TextView
+              android:id="@+id/nameStory5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="alfredobarbosa"
+              android:textSize="12sp"
+              android:textColor="@android:color/black" />
+
+      </LinearLayout>
+
+  </LinearLayout>
+
+  <!-- Third Layout (RelativeLayout) -->
     <RelativeLayout
         android:id="@+id/user"
+        android:layout_marginTop="6dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_below="@id/historias">
-
-        <ImageButton
+        <ImageView
+            android:layout_marginLeft="10dp"
             android:id="@+id/userPicture"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/minipic"/>
+
         <TextView
             android:id="@+id/userName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:textSize="20dp"
-            android:text="princess_peace" />
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@id/userPicture"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="alissawhitegluz" />
+
+        <ImageView
+            android:id="@+id/verified"
+            android:layout_toEndOf="@id/userName"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/verified"/>
+
         <TextView
             android:id="@+id/points"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="360dp"
-            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
             android:text="..." />
 
     </RelativeLayout>
 
-    <!-- Cuarto Layout (LinearLayout) -->
+    <!-- Fourth Layout (LinearLayout) -->
 
     <LinearLayout
         android:id="@+id/picture"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/user"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:src="@drawable/insta"
+            android:layout_height="411dp"
+            android:src="@drawable/alissa"/>
 
     </LinearLayout>
-    <!-- Quinto Layout (RelativeLayout) -->
+
+    <!-- Fifth Layout (LinearLayout) -->
+    <LinearLayout
+        android:id="@+id/botones"
+        android:layout_below="@id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/like"
+            android:layout_marginTop="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@color/white"
+            android:src="@drawable/like" />
+
+        <ImageButton
+            android:id="@+id/coment"
+            android:layout_marginTop="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@color/white"
+            android:src="@drawable/coment" />
+
+        <ImageButton
+            android:id="@+id/send"
+            android:layout_marginTop="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:background="@color/white"
+            android:src="@drawable/enviar" />
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="0dp"
+            android:layout_marginTop="5"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:src="@drawable/save"
+            android:scaleType="fitEnd"/>
+    </LinearLayout>
+
+    <!-- sixth Layout (RelativeLayout) -->
     <RelativeLayout
         android:id="@+id/coments"
         android:layout_width="match_parent"
-        android:layout_below="@id/picture"
-        android:layout_height="wrap_content">
-        <ImageButton
-            android:id="@+id/like"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
-        <ImageButton
-            android:id="@+id/coment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="55dp"
-            android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
-        <ImageButton
-            android:id="@+id/share"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
-            android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
-        <ImageButton
-            android:id="@+id/save"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="350dp"
-            android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/botones"
+        android:layout_marginTop="-1dp">
+
+
+
         <ImageButton
             android:id="@+id/come"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_width="20dp"
+            android:layout_height="13dp"
             android:layout_below="@id/like"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
             android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
+            android:background="@color/white"
+            android:src="@drawable/minispro" />
 
         <TextView
             android:id="@+id/liked"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/like"
-            android:layout_toRightOf="@id/come"
-            android:textSize="15dp"
-            android:text="Liked by Kyla_kayaks and others" />
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@id/come"
+            android:text="Liked by"
+            android:textSize="15dp" />
+
         <TextView
-            android:id="@+id/story2"
+            android:id="@+id/by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/liked"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:text="Kyla_kayaks "
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/like"
+            android:layout_toEndOf="@+id/by"
+            android:layout_marginLeft="4dp"
+            android:text="and"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/users"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:text="others"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/alissa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/liked"
-            android:layout_toRightOf="@id/come"
-            android:textSize="15dp"
-            android:text="Princess_peace Sunday sunshine #weekendvibes" />
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:text="alissawhitegluz"
+            android:textSize="15dp" />
 
-        <ImageButton
-            android:id="@+id/home"
+        <TextView
+            android:id="@+id/sunday"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_below="@id/come"
-            android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
+            android:layout_below="@id/liked"
+            android:layout_marginLeft="148dp"
+            android:text="Sunday sunshine"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/alissa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/liked"
+            android:layout_marginLeft="265dp"
+            android:text="#weekendvibes"
+            android:textColor="#366FD8"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+    <!-- Seventh Layout (LinearLayout) -->
+    <LinearLayout
+        android:id="menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/coments"
+        android:orientation="horizontal">
 
 
         <ImageButton
-            android:id="@+id/search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="90dp"
-            android:layout_below="@id/come"
-            android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
+            android:id="@+id/homes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:src="@drawable/home"
+            android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/searchs"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:src="@drawable/search"
+            android:layout_weight="1"/>
         <ImageButton
             android:id="@+id/reels"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="180dp"
-            android:layout_below="@id/come"
-            android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
-
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:src="@drawable/reel"
+            android:layout_weight="1"/>
         <ImageButton
-            android:id="@+id/sabe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="270dp"
-            android:layout_below="@id/come"
-            android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
-
+            android:id="@+id/stores"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:src="@drawable/store"
+            android:layout_weight="1"/>
         <ImageButton
-            android:id="@+id/profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="340dp"
-            android:layout_below="@id/come"
-            android:layout_weight="1"
-            android:src="@android:drawable/btn_star" />
-    </RelativeLayout>
+            android:id="@+id/profiles"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:src="@drawable/useerprofile"
+            android:layout_weight="1"/>
+    </LinearLayout>
 
 </RelativeLayout>
