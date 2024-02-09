@@ -56,9 +56,9 @@
       android:layout_below="@id/superior"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
       android:orientation="horizontal"
       android:gravity="center_vertical">
-
 
       <LinearLayout
           android:layout_width="wrap_content"
@@ -105,6 +105,7 @@
               android:textColor="@android:color/black" />
 
       </LinearLayout>
+
       <LinearLayout
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
@@ -198,6 +199,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginLeft="5dp"
             android:layout_toEndOf="@id/userPicture"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="18dp"
             android:text="alissawhitegluz" />
@@ -316,6 +318,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_toEndOf="@id/come"
+            android:textColor="@color/black"
             android:text="Liked by"
             android:textSize="15dp" />
 
@@ -325,6 +328,7 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/liked"
             android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:text="Kyla_kayaks "
             android:textSize="15dp" />
@@ -334,6 +338,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/like"
             android:layout_toEndOf="@+id/by"
+            android:textColor="@color/black"
             android:layout_marginLeft="4dp"
             android:text="and"
             android:textSize="15dp" />
@@ -343,6 +348,7 @@
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/users"
             android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
             android:textStyle="bold"
             android:text="others"
             android:textSize="15dp" />
@@ -352,6 +358,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/liked"
+            android:textColor="@color/black"
             android:layout_marginLeft="40dp"
             android:textStyle="bold"
             android:text="alissawhitegluz"
@@ -362,6 +369,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/liked"
+            android:textColor="@color/black"
             android:layout_marginLeft="148dp"
             android:text="Sunday sunshine"
             android:textSize="15dp" />
