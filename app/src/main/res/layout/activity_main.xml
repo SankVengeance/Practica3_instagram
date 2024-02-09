@@ -77,7 +77,7 @@
               android:id="@+id/nameStory1"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="My story"
+              android:text="Your story"
               android:textSize="12sp"
               android:textColor="@android:color/black" />
 
@@ -212,14 +212,17 @@
             android:scaleType="centerCrop"
             android:src="@drawable/verified"/>
 
-        <TextView
-            android:id="@+id/points"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageButton
+            android:id="@+id/options"
+            android:layout_marginTop="10dp"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_weight="0.7"
+            android:background="@color/white"
             android:layout_marginLeft="360dp"
-            android:textStyle="bold"
-            android:textSize="30sp"
-            android:text="..." />
+            android:src="@drawable/points" />
+
+
 
     </RelativeLayout>
 
@@ -373,17 +376,30 @@
             android:textSize="15dp" />
 
     </RelativeLayout>
-
-
     <!-- Seventh Layout (LinearLayout) -->
+    <LinearLayout
+        android:id="@+id/linea"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coments"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/teal_700"/>
+    </LinearLayout>
+
+    <!-- Eighth Layout (LinearLayout) -->
     <LinearLayout
         android:id="menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_below="@id/coments"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/linea"
         android:orientation="horizontal">
-
 
         <ImageButton
             android:id="@+id/homes"
